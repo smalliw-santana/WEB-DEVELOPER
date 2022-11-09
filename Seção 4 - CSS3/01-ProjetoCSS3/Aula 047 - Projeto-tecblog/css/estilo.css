@@ -1,0 +1,68 @@
+/* 
+	LIMPAR AS FORMATAÇÕES PADRÕES 
+*/
+
+
+/* 
+	(*)-SIGNIFICA TUDO 
+*/ 	
+ * { 
+ 		margin: 0;
+ 		padding: 0;
+ }
+
+ body {
+ 	font-size: 1em; /* tamanho da fonte */
+ 	font-family: "Trebuchet MS", helvetica, sans-serif; /* tipo de fonte */
+ 	background: #e6e6e6; /* cor de fundo */
+ }
+
+
+
+ /* 
+ ***** Layout ********************************************************************************
+ */
+
+ #area-cabecalho {
+	background: #f7b600; /* cor de fundo */
+	padding: 15px; /* espaçamento */
+	text-align: center; /* centralizar */ 
+ 	}
+
+ #area-logo, #area-menu {
+ 	padding: 10px; /* espaçamento */
+ }
+
+
+ /* 
+ **** Formatção do menu ********************************************************************************
+ */
+a {
+	text-decoration: none;
+}
+
+/* links que foram visitados e não visitados */
+ a:link, a:visited {
+ 	color: #fff; /* cor da fonte */
+ 	padding: 8px 12px; /* espaçamento interno de 8px(shape-outside: perior e inferior) e 12px(laterais) */
+ }
+
+/* Efeito ao se passar o mause */
+ a:hover {
+ 	color: #f7b600; /* cor da fonte */
+ 	background: #fff; /* cor de fundo */
+ }
+
+
+
+ /* 
+ **** Formatções em geral ********************************************************************************
+ */	
+h1 {
+	color: #4e4e4e; /* cor da fonte */
+	font-size: 2.5em; /* tamnho da fonte */
+}
+
+.branco {
+	color: white; /* cor da fonte */
+}

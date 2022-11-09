@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Estilos de Textos</title>
+		<meta charset="utf-8">		
+		<style type="text/css">
+
+/* APLICANDO ESTILOS EM TEXTOS */
+
+/*ACESSE PARA VER TODAS AS PROPRIEDADES QUE PODEM SER ULTILIZADAS*/
+/* https://www.w3schools.com/cssref/pr_font_font.asp */
+
+			p {
+				font-size: 40px; /* tamanho da fonte */
+				font-family: Hack, "Times new Romam", Times, serif;
+			}
+
+/*************************************************** 
+font-weight - define o peso da fonte de 100 ate 900.
+               - Bold 
+               - Normal
+Aplicando o formato negrito               
+*/
+				.negrito {
+					font-weight: 500; /* aplica o efeito negrito */  
+				}
+
+/* Aplicando o formato italico */
+				.italico {
+					font-style: italic;
+				}
+
+/* Aplicando o formato de linhas */
+/*		text-decoration:
+						-    underline - linha inferior 
+						-     overline - linha superior
+						- line-through - linha sobre o texto
+*/						
+				.formatacao {
+				text-decoration: underline; 
+				}
+				.formatacao2 {
+				text-decoration: overline; 
+				}
+				.formatacao3 {
+				text-decoration: line-through; 
+				}
+
+/* AGRUPANDO TODOS OS ESTILOS DE TEXTO EM UMA UNICA PROPRIEDADE */
+				.texto {
+					font: bold 40px "Lucida Sans Unicode", "Lucida Grande", Sans-serif; 
+				}
+
+/*
+CSS Syntax para se ultilizar o comando font
+	font: 
+		 -font-style 
+		 -font-variant 
+		 -font-weight 
+		 -font-size/line-height 
+		 -font-family|
+		 			-caption|icon|menu|message-box|small-caption|status-bar|initial|inherit;
+*/				
+
+/****************************/
+/* APLICANDO CONHECIMENTOS */
+				h3 {					
+					font-family: "Trebuchet MS";
+					font-size: 48px;
+					text-decoration: overline;
+					color: red;
+					border-bottom: 5px solid red;
+  					background-color: lightgrey; /* cor de fundo */ 
+				}
+
+				#materia, a {
+					font-style: italic;
+					font-size: 1.2em;
+					color: purple;
+					margin: 10px;
+					text-decoration: none;
+				}
+
+				.portal {
+					font-style: normal;
+					font-family: "roboto";
+					font-size: 16px;
+					color: blue;
+					margin: 32px;
+					text-decoration: none;
+					font-weight: bold;
+				}
+
+				.portal:hover {
+					color: red;					
+				}		
+
+		</style>
+		
+	</head>
+	
+	<body>
+		<p class="negrito">Texto negrito</p>
+		<p class="italico">Texto itálico</p>
+		<p class="formatacao">Formataçao de Texto (underline)</p>
+		<p class="formatacao2">Formataçao de Texto (overline)</p>
+		<p class="formatacao3">Formataçao de Texto (line-through)</p>
+		<p class="texto">Texto</p>
+		<p>Padrão</p><hr><br>
+
+<!-- APLICANDO CONHECIMENTOS -->
+
+		<h3>Aplicando conhecimentos</h3>
+		<p>Lista de deveres</p>
+		
+		<ul id="materia"> 
+			<li>Matemática</li>
+			<li>Português</li>
+			<li>Ciências</li>
+			<li>Fisica</li>			
+			<li>Artes</li>
+			<li>História</li>
+		</ul>
+
+		<h3>Acesso ao portal</h3>
+		<a class="portal" href="">Escola</a>
+		<a class="portal" href="">Diretória</a>
+		<a class="portal" href="">Professores</a>
+		<a class="portal" href="">Alunos</a>
+
+	</body>
+</html>

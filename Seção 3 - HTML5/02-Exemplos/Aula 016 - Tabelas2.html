@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tabela2</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+
+		<h2>Produtos</h2>
+
+<!--Estrutura para criar uma tabela
+table - cria a tabela
+   th - Titiulo da tabela
+   tr - linha da tabela
+   td - cria os dados de dentro da tabela -->
+
+<!-- INCIO Abertura da tabela 
+border 2px e largura(width)400px tamanho na horizontal,podendo ser usado porcentagem -->
+		<table border="2" width="100%">  
+
+			<!-- Primeira linha com dados -->
+			<tr>  <!-- INICIO Linha da tabela(tr) define a linha -->
+				<th>Código</th> <!-- define os titulos de dentro da tabela -->
+				<th>Produto</th>
+				<th>Preço</th>			
+			</tr> <!-- FIM Linha da tabela -->
+
+			<!-- Segunda linha com dados / esses dados seram preenchidos de acordo com as informações
+			da primeira (td) -->
+			<tr>	
+				<td>001</td>
+				<td>Notebook</td>
+				<td>R$ 2.500,99</td>
+			</tr>
+
+			<tr>	
+				<td>002</td>
+			<!--	<td>   INICIO inserindo imagem na tabela --> 
+				<!--	<img src="imagens/ferrari.jpg" width="200">  -->
+			<!--	</td>  FIM inserindo imagem na tabela -->
+				<td>Tablet</td> <!-- inserindo imagem na tabela -->
+				<td>R$ 999,99</td>
+			</tr>
+
+			<tr>
+				<td rowspan="3">Desconto</td>  <!-- (rowspan) AGRUPA NA VERTICAL ultilizado para agrupar 2 linhas ou mais que estiverem vazias -->
+				<td colspan="2">Cupom1 -R$ 10</td> <!-- (colspan) AGRUPA NA HORIZONTAL ultilizado para agrupar 2 colunas ou mais que estiverem vazias -->
+			<!-- <td></td> sem nenhuma informação pode ser usado para a tabela não ficar vazia apenas com o formato da tabela -->
+			</tr>
+
+			<tr>
+				<td colspan="2">Cupom2 -R$ 12</td> <!-- (colspan) ultilizado para agrupar 2 colunas ou mais que estiverem vazias -->
+			<!-- <td></td> sem nenhuma informação pode ser usado para a tabela não ficar vazia apenas com o formato da tabela -->
+			</tr>
+
+			<tr>
+				<td colspan="2">Cupom3 -R$ 15</td> <!-- (colspan) ultilizado para agrupar 2 colunas ou mais que estiverem vazias -->
+			<!-- <td></td> sem nenhuma informação pode ser usado para a tabela não ficar vazia apenas com o formato da tabela -->
+			</tr>
+
+			<tr>
+				<td>Total:</td>
+				/<td colspan="2">R$ 3.478,98</td>
+			</tr>
+			
+		</table> <!-- FIM Fechamento da tabela -->
+		
+
+
+	</body>
+</html>

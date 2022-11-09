@@ -1,0 +1,39 @@
+/* FONTES CUSTOMIZADAS */
+
+@font-face { /* carregando fontes não instaladas no pc */
+  font-family: "Road Rage";
+  src: url("../fonts/RoadRage.woff"); /* local onde a fonte sera carregada */
+}
+
+@font-face { /* carregando fontes não instaladas no pc */
+  font-family: "Heart";
+  src: url("../fonts/BringHeart.woff"); /* local onde a fonte sera carregada com o formato (.woff) */
+}
+
+@font-face { /* carregando fontes não instaladas no pc */
+  font-family: "Madel";
+  src: url("../fonts/MadelinaScript.woff"); /* local onde a fonte sera carregada */
+}
+
+@font-face { /* carregando fontes não instaladas no pc */
+  font-family: "Ancient";
+  src: url("../fonts/Ancient-Medium.woff"); /* local onde a fonte sera carregada */
+}
+
+h1 {
+  color: cornflowerblue;
+  font-size: 5em;
+  font-family: "Road Rage";
+}
+
+/* teste */
+body {
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5em;
+  text-align: justify;
+  font-family: "Madel";
+}

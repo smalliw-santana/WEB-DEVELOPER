@@ -1,0 +1,95 @@
+body {
+  background: linear-gradient(to bottom, #131316, #2e022ad3, #131316);
+  font-family: "Car Lock";
+  font-size: 10px;
+  color: #fff;
+}
+
+h2 {
+  color: #fff;
+  font-family: "Car Lock";
+  text-align: center;
+  font-size: 2.5em;
+  margin: 0px;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.39);
+  font-size: 0.7em;
+}
+
+#container {
+  border-radius: 3px;
+  border: 0.7px solid #ffffff36;
+  width: 450px;
+  height: 350px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+#container img {
+  margin-top: -140px;
+  margin-bottom: 50px;
+}
+
+input { /* CAIXA */
+  outline: none;
+  font-family: "Car Lock";
+  color: beige;
+  font-size: 2em;
+  height: 40px; /* altura */
+  width: 70%; /* largura */
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  border: none;
+  background: none;
+  background-repeat: no-repeat; /* usado para a imagem de dentro acaixa email e senha não se repertir */
+  background-position: 5px; /* posição horizontal da imagem dentro da caixa */
+}
+
+input.email, input.senha {
+  border-radius: 10px;
+  border: 1px solid #ffffff36;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+input.email {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  background-image: url(imagens/avatar-10.png); /* imagem adicionada dentro da caixa email */
+}
+
+input.senha {
+  background-image: url(imagens/cadeado5.png); /* imagem adicionada dentro da caixa email */
+  margin-bottom: 25px;
+}
+
+.email:hover, .senha:hover {
+  border-bottom: 0.7px solid #ffffff6b;
+}
+
+.submit {
+  text-align: center;
+  background: linear-gradient(to bottom, #ff014d, #810777);
+  color: #fff;
+  border-radius: 5px;
+  width: 60%;
+  height: 40px;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.submit:hover {
+  background: #ff014d;
+
+}
+
+#rodape {
+  text-align: center;
+  margin-top: 80px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.643);
+}

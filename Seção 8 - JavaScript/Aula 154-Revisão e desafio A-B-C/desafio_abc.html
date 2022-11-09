@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Meta tags Obrigatórias -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+    <title>JavaScript</title>
+
+    <script>
+        var a = 10
+        var b = 20
+        var c = null //variavel auxiliar ultilizada na logica
+
+        document.write('<h4 class="display-4 text-primary mb-5 mt-4 text-uppercase text-center" style="border: 2px solid red;">Curso de JavaScript </h4>')
+
+        //foi ultilizado formatacao direto CSS
+        document.write('<h1 class="display-4 text-primary container alert-info mt-3"> A = ' + a + '<br /> </h1>')
+        document.write('<h1 class="display-4 text-warning container alert-success"> B = ' + b + '<br /> </h1>')
+        document.write('<h1 class="display-4 text-danger container alert-warning mb-4"> C = ' + c + '<br /> </h1>')
+
+        document.write('<hr />')
+
+        //logica de inversão dos valores das variáveis A e B
+        c = a //utilizada a variável C para armazenar temporariamente o valor da variável A
+        a = b //sobrepõe o valor da variável A com o valor da variável B
+        b = c //sobrepóe o valor da variável B com o valor da variável C (C nesse momento contém o valor da variável A)
+        c = null //opcional: remove o valor contido na variável C
+
+        //
+        document.write('<h1 class="display-4 text-secondary p-3"> o valor de <span class="text-primary">A</span> invertido sera de: ' + a + '<br /> </h1>')
+        document.write('<h1 class="display-4 text-info p-3"     > o valor de <span class="text-success">B</span> invertido sera de: ' + b + '<br /> </h1>')
+        document.write('<h1 class="display-4 text-success p-3"   > o valor de <span class="text-warning">C</span> invertido sera de: ' + c + '<br /> </h1>')
+      </script>
+
+  </head>
+
+  <body>
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+</html>

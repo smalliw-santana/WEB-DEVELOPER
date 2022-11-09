@@ -1,0 +1,42 @@
+/*
+Animações
+*/
+@keyframes animacao-caixa {
+  from { /* estilo inicial */
+    background: red;
+    border-radius: 0px;
+    top: 0;
+    left: 0;
+  }
+  to { /* estilo final */
+    background: yellow;
+    border-radius: 300px;
+    top: 200px;
+    left: 200px;
+  }
+}
+
+#caixa {
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  background: red;
+  position: relative;
+
+/*  -webkit-animation-name: animacao-caixa;
+/*  -moz-animation-name: animacao-caixa;
+/*  -0-animation-name: animacao-caixa;
+
+  /*  animation-name: animacao-caixa; /* define a animação que será usada */
+
+/*  animation-duration: 5s; /* define a duração do efeito */
+/*  animation-delay: 3s; /* tempo de espera para a animação */
+/*  animation-iteration-count: 2; /* define quantas vezes será execultado */
+/*  animation-direction: alternate; /* direção da animação */
+
+  -webkit-animation: animacao-caixa 5s 3s 2 alternate;
+  -moz-animation: animacao-caixa 5s 3s 2 alternate;
+  -o-animation: animacao-caixa 5s 3s 2 alternate;
+
+  animation: animacao-caixa 5s 3s 2 alternate; /* definindo todos os valores */
+}

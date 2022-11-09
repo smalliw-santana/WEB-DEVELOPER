@@ -1,0 +1,44 @@
+/* estilizando formularios */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+fieldset {
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block; /* ultilizado para deixar a caixa a baixo tipo bloco */
+    cursor: pointer; /* adicionando ponteiro do cursor */
+}
+
+/* PADRÃO NOVO UTILIZADO **************************************************************************************************
+input [type="text"] { /* [type="text"] - selecionando o tipo de atributo no caso (text) que irão receber a formatação */
+/*    width: 20em; /* largura da caixa label */
+input {
+    width: 20em;
+}
+
+textarea {
+    width: 20em;
+    height: 10em;
+}
+
+input.radius, input.checkbox, input.submit {
+    width: auto; /* largura automatica */
+}
+
+.radius {
+    margin-right: 1em;
+}
+
+
+

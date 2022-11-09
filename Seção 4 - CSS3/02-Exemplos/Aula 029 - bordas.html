@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bordas</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+
+/************************			
+/*  Ultilizando bordas */
+
+/**************************************************************************  
+A propriedade (border-style),especifica que tipo de borda a ser exibida.
+Os seguintes valores são permitidos:
+
+dotted - Define uma borda pontilhada
+dashed - Define uma borda tracejada
+solid  - Define uma borda sólida
+double - Define uma borda dupla
+groove - Define uma borda estriada 3D. O efeito depende do valor da cor da borda
+ridge  - Define uma borda sulcada em 3D. O efeito depende do valor da cor da borda
+inset  - Define uma borda inserida em 3D. O efeito depende do valor da cor da borda
+outset - Define uma borda inicial 3D. O efeito depende do valor da cor da borda
+none   - Define sem borda
+hidden - Define uma borda oculta		
+*/					
+			#exemplo1 {
+				border: 10px double blue;
+			}
+
+/*******************************************************************************
+A propriedade (border-width),especifica a largura das quatro bordas.
+A largura pode ser definida como um tamanho específico (em px, pt, cm, em, etc) ou usando um dos três valores predefinidos: fino, médio ou grosso.
+A border-widthpropriedade pode ter de um a quatro valores (para a borda superior, borda direita, borda inferior e borda esquerda).
+*/
+			#exemplo2 {
+				border-color: red green yellow blue; /* cor da borda-aplicado no sentido horario */ 
+				border-width: 20px 15px 10px 5px; /* espeçura da borda */
+				border-style:  solid dotted dashed outset ;/* Estilo da borda */  
+			}
+
+/*******************************************************************************
+especificando propriedades de borda individual para apenas o lado esquerdo. 
+*/			#exemplo3 {
+				border-left: 6px solid red;   /* borda ao lado esquerdo */
+  				background-color: lightgrey; /* cor de fundo */
+			}
+
+/*******************************************************************************
+especificando propriedades de borda individual para apenas inferior. 
+*/			#exemplo4 {
+				border-bottom: 6px solid green; /* borda inferior */
+  				background-color: lightgrey;  /* cor de fundo */
+			}
+
+/*******************************************************************************
+A propriedade (border-radius),é usada para adicionar bordas arredondadas a um elemento
+Nota:(border-radius) não é suportada no IE8 e versões anteriores.
+*/			#exemplo5 {
+				border: 2px solid red;
+  				border-radius: 15px;
+			}					
+
+		</style>
+	</head>
+
+	<body><br>
+<!-- EXEMPLO 1 -->		
+		<div id="exemplo1">
+			<h4>EXEMPLO 1</h4>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tristique sit amet odio sed cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dui arcu, mollis a laoreet in, sagittis ac nisl. Suspendisse mi erat, rutrum nec mauris eu, vulputate malesuada velit. 
+			</p>
+		</div><hr><br>	
+
+<!-- EXEMPLO 2 -->	
+		<div id="exemplo2">
+			<h4>EXEMPLO 2</h4>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tristique sit amet odio sed cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dui arcu, mollis a laoreet in, sagittis ac nisl. Suspendisse mi erat, rutrum nec mauris eu, vulputate malesuada velit. 
+			</p>
+		</div><hr><br>	
+
+<!-- EXEMPLO 3 -->	
+		<div id="exemplo3">
+			<h4>EXEMPLO 3</h4>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tristique sit amet odio sed cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dui arcu, mollis a laoreet in, sagittis ac nisl. Suspendisse mi erat, rutrum nec mauris eu, vulputate malesuada velit. 
+			</p>
+		</div><hr><br>	
+
+<!-- EXEMPLO 4 -->	
+		<div id="exemplo4">
+			<h4>EXEMPLO 4</h4>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tristique sit amet odio sed cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dui arcu, mollis a laoreet in, sagittis ac nisl. Suspendisse mi erat, rutrum nec mauris eu, vulputate malesuada velit. 
+			</p>
+		</div><hr><br>	
+
+<!-- EXEMPLO 5 -->	
+		<div id="exemplo5">
+			<h4>EXEMPLO 5</h4>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tristique sit amet odio sed cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dui arcu, mollis a laoreet in, sagittis ac nisl. Suspendisse mi erat, rutrum nec mauris eu, vulputate malesuada velit. 
+			</p>
+		</div><hr><br>							
+
+	</body>
+</html>

@@ -1,0 +1,30 @@
+/* Zerando a formatação */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "trebuchet ms", Arial, Helvetica, sans-serif; /* tipo de fonte */
+  background: #fff url(../imagens/NoticiasCidade/fundo.png) repeat-x; /* repetindo a imagem apenas na horizontal */
+}
+
+#container {
+  width: 750px; /* largura */
+  margin: 0 auto; /* espaçamento externo */
+}
+
+#topo {
+  border: 1px solid red;
+  background: url(../imagens/NoticiasCidade/detalhe-topo.png) no-repeat top right;
+  padding-top: 25px; /* espaçamento interno */
+  height: 150px; /* altura */
+}
+
+.logo {
+  border: 1px solid red;
+  width: 152px; /* largura */ /* OBS.: LARGURA REFERENTE AO TAMANHO REAL DO LOGO */
+  height: 66px; /* altura */
+  background: url(../imagens/NoticiasCidade/logo.png) no-repeat center; /* para não repetir a imagem e centraliza-la */
+  text-indent: -3000px; /* empurra o texto para o lado direito ou esquerdo - foi ultilizado  para esconder o texto */
+}

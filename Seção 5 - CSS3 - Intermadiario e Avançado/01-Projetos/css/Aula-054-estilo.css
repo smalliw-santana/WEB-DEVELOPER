@@ -1,0 +1,52 @@
+/************************
+ Marcando página atual */
+ ul {
+ 	margin: 0; /* espaçamento externo */
+ 	padding: 0; /* espa;camento interno */
+ 	list-style-type: none; /* remove o estilo/tipo de lista */
+ }
+
+ ul a { /* Selecionando os links dentro da (ul) */
+	font-size: 13px;
+	font-family: "arial";
+ 	width: 199px; /* largura */
+ 	height: 40px; /* altura */
+ 	display: block; /* deixando como elemento de bloco */
+ 	color: #000; /* cor da fonte */
+ 	text-decoration: none; /* remove o sublinhado */
+ 	text-indent: 45px; /* espaçamento ao lado do texto,como o padding */
+ 	line-height: 40px; /* altura da linha do texto */
+ 	background: #f7b600 url(../imagens/menu3.png) no-repeat left bottom; /* (url)-adicionando imagem de fundo,
+ 													   (no-repeat)-para a imagem não se repetir,
+ 													   (left) a esquerda,
+ 													   (bottom)-inferior, */
+ }
+
+ a:hover {
+ 	width: 199px; /* largura */
+ 	background-position: right bottom; /* movimentando a direita e inferior */
+ 	background-color: #f99200;
+ 	color: #fff; /* Cor da fonte */
+ 	border-radius: 2px;
+ 	border-left: 2px solid red; /* borda */
+ }
+
+ #tecnologia #navegacao .tecnologia a,
+ #informatica #navegacao .informatica a,
+ #celulares #navegacao .celulares a,
+ #jogos #navegacao .jogos a {
+ 	background-position: right bottom; /* movimentando a direita e inferior */
+ 	background-color: #f99200;
+ 	color: #fff; /* Cor da fonte */
+ 	border-left: 2px solid green;
+ }
+
+/* EXEMPLO 01
+ a:hover, .selecionado a { /* aplica-se para o estado hover do link e quando tivermos a (.selecionado) e em seguida um link
+ 	width: 199px; /* largura
+ 	background-position: right bottom; /* movimentando a direita e inferior
+ 	background-color: #f99200;
+ 	color: #fff; /* Cor da fonte
+ 	border-radius: 2px;
+ 	border-left: 2px solid red; /* borda
+ } */

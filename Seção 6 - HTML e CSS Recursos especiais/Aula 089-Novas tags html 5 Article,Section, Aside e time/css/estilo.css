@@ -1,0 +1,36 @@
+header {
+  border: 1px solid red;
+  background: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+nav {
+  border: 1px solid red;
+  background: #f1afaf;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+footer {
+  border: 1px solid red;
+  background: #959595;
+  padding: 10px;
+}
+
+article {
+  background: orange;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+section {
+  border: 1px dotted #fff;
+  margin-bottom: 5px;
+}
+
+aside {
+  color: white;
+  background: blue;
+  padding: 15px;
+}

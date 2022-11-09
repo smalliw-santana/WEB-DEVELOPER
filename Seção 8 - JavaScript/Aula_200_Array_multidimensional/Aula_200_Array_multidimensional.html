@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	 <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" 
+    		content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" 
+    		href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    		crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" 
+    		href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+    		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" 
+    		crossorigin="anonymous">
+    <style>
+        .primary {
+            color: red;
+        }
+        
+        .secondary{
+            color:green;
+        }
+        
+        .fonte{
+            font-size: 1em;
+            font-family: trebuchet ms;
+        }
+    </style>
+	
+	<meta charset="utf-8">
+     <link rel="icon" href="favicon.ico">
+
+	<title>Curso de JavaScript</title> <!-- adiciona o icone no titulo da pagina -->		
+	
+</head>
+
+<body class="m-3">
+	
+	<h4 class="text-primary text-center">Curso de JavaScript</h4><hr>
+   
+    <div class="alert-secondary p-5 fonte text-uppercase">                                                       
+       
+        <script>
+            /*
+            var lista_coisas = Array() 
+                    lista_coisas['frutas'] = Array()
+            
+                        lista_coisas['frutas'][1] = 'Banana'
+                        lista_coisas['frutas'][2] = 'Macã'
+                        lista_coisas['frutas'][3] = 'Morango'
+                        lista_coisas['frutas'][4] = 'Uva'                    
+            
+                console.log(lista_coisas)
+            */
+            
+            var lista_coisas = Array()                     
+                    lista_coisas['frutas'] = Array('Banana', 'Macã', 'Morango', 'Uva') // sem indice 
+                    lista_coisas['pessoas'] = []
+            
+                    // com indice
+                    lista_coisas['pessoas']['a'] = 'João'
+                    lista_coisas['pessoas']['b'] = 'José'
+                    lista_coisas['pessoas']['c'] = 'Maria'                
+            
+                    document.write(lista_coisas['pessoas']['b'] + ' - Array pessoas <br>')
+                    document.write(lista_coisas['frutas' ]['2'] + ' - Array frutas  <br>') 
+                                                    
+        </script>                                              
+        
+    </div>
+                         
+</body>
+</html>

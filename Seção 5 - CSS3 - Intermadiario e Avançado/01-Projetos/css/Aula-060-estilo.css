@@ -1,0 +1,86 @@
+/**********************
+ coluna falsa */
+
+ body {
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     background: #f6f5a74f;
+ }
+
+ #container {
+   width: 960px; /* 720px; largura */
+   margin: 0 auto; /* espaçamento externo */
+   background: #fff url(../imagens/coluna.png) repeat-y left top; /* cor de fundo*/
+   min-width: 820px; /* largura minima */
+   max-width: 1280px; /* largura maxima */
+/*   min-height- altura minima
+     max-height- altura maxima */
+ }
+
+ #marca {
+     width: 100%; /*Largura */
+     height: 200px; /* altura */
+     background: #225992 url(../imagens/cabecalho2.jpg) no-repeat center; /* cor de fundo */
+     text-align: center; /* centralizar o conteudo */
+     line-height: 200px; /* altura da linha */
+     margin-bottom: 15px; /* espaçamento externo */
+ }
+
+/* INCIO CONTEUDO */
+ #conteudo {
+     width: 75%; /* largura */
+     float: right; /* alinhando a direita */
+ }
+
+ #navegacao {
+  width: 23%; /* largura */
+  float: left; /* alinhando a esquerda */
+  padding-top: 20px; /* espaçamento interno superior */
+  padding-bottom: 20px; /* espaçamento interno inferior */
+/*  background: #d1d1d1; /* cor de fundo */
+}
+
+ #conteudo-principal {
+  width: 63%; /* largura */
+  float: left; /* alinhando a esquerda */
+ }
+
+ img.img-noticia {
+     width: 94%;
+     padding: 2%;
+     max-width: 600px;
+ }
+
+ #conteudo-secundario {
+     width: 34%; /* largura */
+     float: right; /* alinhando a direita */
+     background: #d1d1d1;
+ }
+
+ #conteudo-secundario h1,
+ #conteudo-secundario h2,
+ #conteudo-secundario h3,
+ #conteudo-secundario p {
+     padding-left: 20px; /* espaçamento interno a esquerda */
+     padding-right: 20px; /* espaçamento interno a direita */
+ }
+ /* FIM CONTEUDO */
+
+/*OBS.: somando 520 + 180 = 700, sobrando 20px de espaço entre o conteudo e navegação
+tatal do cantainer é 720 */
+
+/* INICIO NAVEGAÇÃO */
+
+ #navegacao ul {
+     list-style: none;
+ }
+
+ #navegacao li a {
+     text-decoration: none;
+ }
+ /* FIM NAVEGAÇÃO */
+
+ #rodape {
+     clear: both; /* limpa a formatção flutuante do (float) */
+     background: #c4c4c4; /* cor de fundo */
+     padding: 5px; /* espaçamento interno */
+ }

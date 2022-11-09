@@ -1,0 +1,40 @@
+/* ESTRUTURA DO SITE */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, "Trebuchet MS", sans-serif;
+  background: #fff url(../imagens/ChaleHotel/bg.png);
+  margin: 15px;
+}
+
+#container {
+  background:  #ede9cc;
+}
+
+#topo {
+  position: relative; /* muda a posição */
+  background: #dbcd87;
+  height: 15.4em; /* altura proporcional ao tamanho da fonte (letra) */
+  min-height: 250px; /* altura minima */
+}
+
+#area-logo {
+  position: absolute;
+  background: url(../imagens/ChaleHotel/topo-imagem-principal.png) no-repeat;
+  width: 100%;
+  height: 250px;
+  top: 0;
+  left: 0;
+}
+
+#area-menu {
+  position: absolute; /* muda a posição */
+  top: 0; /* posicionamento superior */
+  right: 0; /* posicionamento a direita */
+  background: url(../imagens/ChaleHotel/topo-imagem-lateral.png) no-repeat;
+  width: 450px;
+  height: 250px;
+}

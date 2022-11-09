@@ -1,0 +1,211 @@
+/* 
+	LIMPAR AS FORMATAÇÕES PADRÕES 
+	(*)-SIGNIFICA TUDO 
+*/ 	
+ * { 
+ 		margin: 0;
+ 		padding: 0;
+ }
+
+ body {
+ 	font-size: 1em; /* tamanho da fonte */
+ 	font-family: "Calibri", "Arial Narrow", "Trebuchet MS", helvetica, sans-serif; /* tipo de fonte */
+ 	background: #e6e6e6; /* cor de fundo */
+ }
+
+
+
+ /* 
+	Layout ********************************************************************************
+ */
+
+ #area-cabecalho {
+	background: #2E2E2E; /* cor de fundo */
+	padding: 15px; /* espaçamento */
+	text-align: center; /* centralizar */ 
+ 	}
+
+ #area-logo, #area-menu {
+ 	padding: 15px; /* espaçamento */
+ }
+
+ #area-principal {
+ 	width: 970px; /* largura *//*(obs:920px é a largura padrão para dispositivos modernos) */
+ 	margin: 0 auto; /* 0px (inferior e superior) e auto(automatico nas laterais) */ 
+ 	padding: 15px; /* espaçamento interno */	
+ }
+
+ #texto {
+ 	color: yellow; /* cor do texto */
+ 	font-family: "Honey Butter Script Clean"; /* fonte usada no texto */
+ 	font-size: 1.9em; /* tamanhio da fonte */
+ 	margin-top: 5px; /* espaçamento externo superior */
+ 	display: inline-block; 	/* tipo de objeto */
+ 	border-bottom: 3px solid #DF3A01; /* borda */
+ }
+
+ /* UTILIZADO APENAS PARA TESTE
+ aplicando formatações em grupos de ID`s 
+ #area-lateral {
+ 	background: orange;  cor de fundo 
+ } */
+
+/* 	Somando 660+240=900 - sobrando 20px de distancia de uma para outra,
+	lembrando que o total definido foi de 920px(area-principal). 
+*/
+ #area-postagens {
+ 	width: 710px; /* Largura */
+ 	float: left; /* flutuamento a esquerda */
+ }
+
+ #area-lateral {
+ 	width: 240px; /* Largura */
+ 	float: right; /* flutuamento a direita */
+ }
+
+ .postagem {
+ 	padding: 20px; /* espaçamento interno */
+ 	margin-bottom: 20px; /* espaçamento externo */
+ 	background: white; /* cor de fundo */
+ 	border-radius: 5px; /* arrendondamento da borda */
+ }
+
+ #paragrafo {
+ 	padding-left: 5px;
+ 	margin-bottom: 15px;
+ 	color: #424242; /* cor da fonte */
+ 	font-family: "Lucida Calligraphy", Arial; /* tipo de fonte */
+ 	font-size: 0.7em; /* tamanho da fonte */
+ 	border-left: 3px solid #DF3A01; /* borda a esquerda */ 	
+ /*	border: 1px solid red; */
+ }
+
+ .conteudo-lateral {
+ 	background: white; /* cor de fundo */
+ 	padding: 10px; /* espaçamento interno */
+ 	margin-bottom: 20px; /* espaçamento externo inferior */
+ 	border-radius: 5px;
+ }
+
+ .postagem-lateral {
+	font-size: 0.8em; /* tamanho da fonte */
+	padding: 5px; /* espaçamento interno */
+	border-bottom: 1px dotted #CCC; 
+}
+
+.postagem-lateral p {
+	padding: 5px 0px;
+}
+
+ #rodape {
+ 	clear: both; /* limpando o fluxo do float(elementos flutuantes),para que o rodape ocupe somente o espaço abaixo */
+ 	text-align: center; /* centralizar */
+ 	padding: 5px; /* espaçamento interno */
+ 	background: #CCC; /* cor de fundo */
+ }
+
+ /* 
+	Formatação do menu ********************************************************************************
+ */
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+ 	color: #DF3A01; /* cor da fonte */
+
+ }
+
+	/* Efeito ao se passar o mause */
+a:hover {
+ 	margin-top: 15px; /* espacamento esterno */
+ 	text-decoration: underline; /* sublinhado */
+ }
+
+ #area-menu a { 	
+ 	margin-left: 25px; /* mespaçamento externo */
+ 	text-transform: uppercase; /* caixa alta */
+ 	font-weight: bold; /* fonte em negrito */
+ }
+
+/* 	utilizando seletores,
+	formatando somente os links dentro da #area-cabecalho, que foram visitados e não visitados */
+ #area-cabecalho a:link, #area-cabecalho a:visited {
+ 	color: #9AFE2E; /* cor da fonte */
+ 	padding: 8px 12px; /* espaçamento interno de 8px(shape-outside: perior e inferior) e 12px(laterais) */
+ }
+
+	/* Efeito ao se passar o mause */
+ #area-cabecalho a:hover {
+ 	color: yellow; /* cor da fonte */
+ 	background: #DF3A01; /* cor de fundo */
+ 	text-decoration: none;
+ 	border-radius: 3px;
+ 	text-transform: uppercase;
+ 	font-weight: bold;
+ }
+
+ /* 
+ 	Formatções em geral ********************************************************************************
+ */	
+h1 {
+	color: #4e4e4e; /* cor da fonte */
+	font-size: 2.5em; /* tamnho da fonte */
+}
+
+h2, h3 {
+	padding-bottom: 15px;
+	color: #DF3A01; /* cor da fonte */
+	font-size: 1.6em;
+	font-family: "Cute Jellyfish";
+	display: inline-block;
+}
+
+h2:hover, h3:hover {
+	color: red; /* cor da fonte */
+	margin-bottom: 15px;
+	padding-bottom: 0px;
+}
+
+h4 {
+	border-radius: 2px;
+	font-family: "Doctor Soos Light";
+	margin-bottom: 5px;
+	color: #fff; /* cor da fonte */
+	background: #DF3A01; /* cor de fundo */
+	padding: 4px; /* espaçamento interno */
+}
+
+h4:hover {
+	color: yellow;
+}
+
+img {
+	border: 5px solid #e6e6e6; /* borda */
+}
+
+#area-postagens p {
+	padding: 15px 0px; /* espaçamento inferior interno */
+}
+
+.tec {
+	color: #DF3A01; /* cor da fonte */
+	font-size: 1em; /* tamanho da fonte */	
+	font-family: "electrical"; /* tipo  de fonte */
+}
+
+.blog {
+	color: white; /* cor da fonte */
+	font-size: 1em; /* tamanho da fonte */
+	font-family: "electrical"; /* tipo  de fonte */
+}
+
+.data-postagem {
+	font-size: 0.8em; /* tamanho da fonte */
+	border-bottom: 1px solid #f4f4f4; /* borda a baixo */
+	padding-bottom: 10px; /* espaçamento interno a baixo */
+	margin-bottom: 10px; /* espaçamento exteerno a baixo */
+	display: block; /* comportamento de elemento bloco - aplicado no SPAN */
+}
+
+

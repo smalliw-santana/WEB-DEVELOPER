@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">  
+     
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+ <title>JavaScript</title>     
+
+ </head>
+
+ <body style="padding: 25px;">     
+    
+     <script>
+         var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+         function adicionarObjetos() {
+         //recupera o valor inserido no campo id objeto
+         var objeto = document.getElementById('objeto').value
+
+         //caso possua algum valor preenchido entra no if
+         if(objeto != '') {
+         //verifica se o valor já não foi inserido anteriormente
+         //se sim, informa que valor já existe, se não insere novo valor
+         if( objetos.indexOf(objeto) !== -1) {
+         alert('Objeto já foi adicionado')
+         } else {
+         objetos.push(objeto)
+         console.log(objetos)
+
+         document.getElementById('objeto').value = ''
+         }
+
+         } else {
+         alert('Informe um objeto válido')
+
+         }
+         }
+         function ordenarObjetos() {
+         objetos.sort()
+         console.log(objetos)
+         }
+     </script>         
+         
+        <h5>Digite o Item a ser Adicionado a Lista</h5><hr>
+             <input type="text" id="objeto" />
+             <button onclick="adicionarObjetos()" class="btn btn-danger btn-sm">Adicionar</button>
+             <button onclick="ordenarObjetos()" class="btn btn-success btn-sm">Ordenar</button>                    
+ </body>
+</html>

@@ -1,0 +1,78 @@
+/* estilizando formularios 2 */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #BDBDBD url(imagens/fundo4.jpg);
+
+
+}
+
+h2 {
+    text-align: center;
+    color: #585858;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+}
+
+#container {
+    border-radius: 1px solid red;
+    width: 400px; /* largura */
+    height: 300px; /* altura */
+/*    background-color: rgba(255, 255, 255, 0.3); /* cor defundo RGBA */
+/*    -webkit-border-radius: 10px; /* bordar redonda */
+/*    -moz-border-radius: 10px; /* bordar redonda */
+/*    border-radius: 10px; /* bordar redonda */
+    margin: 0 auto; /* espaçamento externo para centralizar */
+    margin-top: 120px; /* espaçamento superior */
+    text-align: center; /* para centralizar tudo dentro do container */
+}
+
+#container img {
+    width: 150px; /* largura */
+    height: 150px; /* altura */
+    margin-top: -100px;
+    margin-bottom: 60px;
+}
+
+input { /* CAIXA */
+    height: 40px; /* altura */
+    width: 80%; /* largura */
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 40px; /* espaçamento interno */
+ /*   border: none; /* removendo a borda */
+
+    background-repeat: no-repeat; /* usado para a imagem de dentro acaixa email e senha não se repertir */
+    background-position: 10px; /* posição horizontal da imagem dentro da caixa */
+}
+
+input.email {
+    background-image: url(../imagens/icone-usuario.png); /* imagem adicionada dentro da caixa email */
+
+}
+
+input.senha {
+    background-image: url(../imagens/icone-cadeado.png); /* imagem adicionada dentro da caixa senha */
+}
+
+input.submit {
+    color: #fff;
+    background-color: #f79300; /* cor de fundo */
+    border: 2px solid #db7d00; /* cor da borda */
+    padding-left: 5px 20px; /* espaçamento interno */
+    height: 45px; /* altura */
+    width: 90%; /* largura */
+
+/* PARA O EFEITO GRADIENTE FUNCIONAR CORRETAMENTE EM OUTROS NAVEGADORES */
+    background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -o-linear-gradient(to bottom, #faa600, #f68a00);
+
+    background: linear-gradient(to bottom, #faa600, #f68a00); /* ultilizado para fazer o efeito gradiente dentro do botão logar */
+}
+
+
+
+

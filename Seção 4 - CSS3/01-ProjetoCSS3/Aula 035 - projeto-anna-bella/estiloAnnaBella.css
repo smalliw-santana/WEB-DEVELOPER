@@ -1,0 +1,43 @@
+body {
+	background: #d2d2c1 url('img-anna-bella/fundo.png'); /* Fundo background */ 
+	font: 16px Arial, Helvetica, Sans-serif;             /* Fonte padrão da pagina */
+}
+
+#principal {
+/*	border: 1px solid red; */
+	width: 900px; /* largura padrão para o container do site,todos os outros componentes adicionados dentro iram ter o mesmo tamanho */
+}
+
+#menu {
+	background: #c5c5b2;
+/*	border: 1px dotted red; */
+	padding: 18px; /* aplica um espaçamento interno em ambos os lados*/
+}
+
+#conteudo {
+	background: #e8e8d9; /* cor de fundo */
+	padding: 20px;  /* espaçamento interno */
+}
+
+a {
+	color: #4b566a; /* cor da fonte */
+	text-decoration: none; /* remove o sublinhado do texto */
+	font-weight: bold; /* fonte em negrito */
+/*	border: 1px solid red; */
+	padding: 5px; /* aplica um espaçamento interno em ambos os lados */
+}
+
+#centralizar {
+	text-align: center; /* centraliza o texto */
+}
+
+h1 {
+	color: #828271;
+	font-size: 1.2em;
+}
+
+.img-campanha {
+	border: 10px solid #c3c3ae;
+}
+
+

@@ -1,0 +1,43 @@
+/*****************************
+/* Herança e especificidade */
+
+/* Herança - ************************ */
+/*body {
+	color: red;
+	border: 1px solid blue;
+} */
+
+/*******************
+/* Especificidade iguais, exeção !important 
+#pagina p {
+	color: red !important; /* Importatnt - quer dizer que o atributo a mais importante que o outro 
+}
+
+#pagina p {
+	color: blue;
+} */
+
+/* se um seletor for mais especifico que o outro 
+   a regra mais especifica será aplicada 
+   (terá precedência sobre regras mais gerais.) 
+   resumindo será aplicado antes.
+*/
+
+* {
+	color: red;
+}
+
+h2 { /* 3º Aplicado */
+	color: blue;
+}
+
+h2.verde { /* 2º Aplicado */
+	color: green;
+}
+
+h2#amarelo { /* 1º Aplicado */
+	color: yellow;
+}
+
+
+

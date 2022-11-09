@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Testando conhecimento</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			
+			h1 {
+				font-family: "Trebuchet MS";
+				color: yellow;
+			}
+
+			ol {
+				background: #F8EFFB;
+			}
+
+			li {
+				color: black;
+			}
+
+			input {
+				border: 1px solid red;
+				border-radius: 5px;
+				height: 30px;
+			}
+
+/* *************** */
+/* ultilizando #ID */			
+/* *************** */			
+			#topo {
+				background: #0A122A;
+			}
+
+			#conteiner1 {
+				background: #21610B;
+			}
+
+			#logo {
+				background: purple;
+				text-align: center;
+			}
+
+			#conteiner2 {
+				background: gray;
+				color: white;
+			}
+
+			#conteiner3 {
+				background: #D8D8D8;
+			}
+
+			#conhecimentos {
+				font-family: "Trebuchet MS";
+				color: purple;
+			}
+
+			#testando {
+				color: white;
+			}
+
+			#form-container {
+				font-size: 20px;
+				font-family: "Trebuchet MS";
+				background: url(imagens/fundo-caixa.png);
+				color: black;
+			}
+
+			#link {
+				background: #F1F8E0;
+				border: 2px solid red;
+			}
+			
+
+/* ****************** */
+/* ultilizando .class */	
+/* ****************** */
+
+			.titulo {
+				color: white;
+			}
+
+			.titulo2 {
+				color: blue;
+			}
+
+			.ulcont {
+				background: #0B615E;
+				color: white;
+			}
+
+			.ulcont li {
+				background: #0B615E;
+				color: white;
+			}
+
+		</style>
+
+	</head>
+	<body>
+
+		<div id="topo">
+
+			<div id="conteiner1">
+				
+				<div id="logo">
+					<img src="imagens/amazon.png" width="300">					
+				</div>
+
+				<div id="link"><br><br>
+					<a href="">Página inicial</a> |
+					<a href="">Quem somos</a> |
+					<a href="">Contato</a>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum fringilla erat, eu interdum lectus suscipit id. Quisque lobortis pulvinar nisi, non tristique augue lobortis non. Cras tincidunt urna vel felis consequat mattis. Etiam finibus sapien sed purus tincidunt porttitor at ut mauris. Sed lorem est, ullamcorper nec augue ut, convallis sagittis velit.
+					</p>	
+				</div>	
+
+				<h1 class="titulo">Testando conhecimentos 1</h1>
+				<p style="color: yellow;">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum fringilla erat, eu interdum lectus suscipit id. Quisque lobortis pulvinar nisi, non tristique augue lobortis non. Cras tincidunt urna vel felis consequat mattis. Etiam finibus sapien sed purus tincidunt porttitor at ut mauris. Sed lorem est, ullamcorper nec augue ut, convallis sagittis velit.
+				</p>
+				<div align="left">
+					<img src="imagens/imagem1.png" width="500">
+				</div>
+			</div>
+
+			<div id="conteiner2">
+				<h1><span id="testando">Testando </span>conhecimentos 2</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum fringilla erat, eu interdum lectus suscipit id. Quisque lobortis pulvinar nisi, non tristique augue lobortis non. Cras tincidunt urna vel felis consequat mattis. Etiam finibus sapien sed purus tincidunt porttitor at ut mauris. Sed lorem est, ullamcorper nec augue ut, convallis sagittis velit.
+				</p>
+				<ol>
+					<li>home</li>
+					<li>Sobre a empresa</li>
+					<li>Quem somos</li>
+					<li>Contato</li>
+				</ol>
+				<ul class="ulcont", type="circle">
+					<li>home</li>
+					<li>Sobre a empresa</li>
+					<li>Quem somos</li>
+					<li>Contato</li>
+				</ul>
+			</div>
+
+			<div id="conteiner3">
+				<h1 class="titulo2">Testando <span id="conhecimentos">conhecimentos 3</span></h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum fringilla erat, eu interdum lectus suscipit id. Quisque lobortis pulvinar nisi, non tristique augue lobortis non. Cras tincidunt urna vel felis consequat mattis. Etiam finibus sapien sed purus tincidunt porttitor at ut mauris. Sed lorem est, ullamcorper nec augue ut, convallis sagittis velit.
+				</p>
+			</div>
+
+			<div id="form-container">
+				<form>
+					Nome<br>
+					<input type="text" name="nome"><br>
+
+					Email<br>
+					<input type="text" name="email"><br><br>
+
+					Assunto<br>
+					<input type="checkbox" name="assunto" value="interno">Interno<br>
+					<input type="checkbox" name="assunto" value="externo">Externo<br><br>
+
+					Ticket<br>
+					<input type="radio" name="ticket" value="normal">Normal<br>
+					<input type="radio" name="ticket" value="urgencia">Urgente<br><br>
+
+					Interesse<br>
+					<select name="interesse">
+						<option value="comercial">Comercial</option>
+						<option value="administrativo">Administrativo</option>
+						<option value="fomento">Fomento</option>
+						<option value="ti">TI</option>						
+					</select><br><br>
+
+					<input type="submit" name="Enviar">
+
+				</form>
+			</div>
+
+		</div>
+
+	</body>
+</html>

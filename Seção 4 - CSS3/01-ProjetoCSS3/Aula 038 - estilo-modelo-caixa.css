@@ -1,0 +1,58 @@
+/*
+Modelo de caixa
+*/
+
+/*
+.conteudo {	
+/*	        border: 1px solid red; /* Borda da caixa */
+/*     padding-top: 20px; /* espaçamento interno superior */
+/*	 padding-right: 20px; /* espaçamento interno a direita */
+/*	padding-bottom: 20px; /* espaçamento interno inferior */
+/*	  padding-left: 20px; /* espaçamento interno a esquerda */
+
+/* 
+Podemos ultilizar um unico (PADDING) para ultilizarmos todas as propriedades 
+*/
+/*		   padding: 20px 15px 10px 5px; /* sempre no sentido horário */
+
+/* 
+Podemos ultilizar um unico (PADDING) para ultilizarmos todas as propriedades 
+*/		   
+/*		   padding: 20px; /* aplica o valor em todas as propriedades */
+
+/* 
+Podemos aplicar espaçamentos externos ultilizando (MARGIN).  
+*/	
+/*		  margin-top: 20px; /* espaçamento externo superior */
+/*		margin-right: 20px;	/* espaçamento externo a direita */   
+/*		 margin-left: 20px; /* espaçamento externo a esquerda */
+/*	   margin-bottom: 20px; /* espaçamento externo inferior */
+
+/* 
+Podemos ultilizar um unico (MARGIN) para ultilizarmos todas as propriedades. 
+*/
+/*		margin: 10px; /* sempre no sentido horário */
+
+/*			 width: 150px; /* largura da caixa */
+/*}
+
+.conteudo2 {
+	border: 1px solid red; /* Borda da caixa */
+/*	margin: 50px;
+	width: 150px; /* largura da caixa */
+/*}
+
+/*
+NOTICIA 
+*/
+
+#noticia {
+	background: #f9f9f9; /* cor de fundo */
+	border: 1px solid gray;
+	padding: 10px; /* espaçamento interno */
+}
+
+h2 {
+	margin: 0px; /* zerando as margens do H2 
+	                OBS: o (H2) já possui seu espaçamento padrão */
+}

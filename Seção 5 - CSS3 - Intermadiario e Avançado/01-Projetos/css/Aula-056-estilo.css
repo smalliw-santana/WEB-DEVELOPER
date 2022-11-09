@@ -1,0 +1,39 @@
+/*********************************
+ Barra de navegação com abas  */
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif; /*  tipo de fonte*/
+}
+
+ul {
+    margin: 0; /* espaçamento externo*/
+    padding: 0; /* espaçamento interno */
+    list-style: none; /* removendo o efeito de lista*/
+    width: 720px; /* largura */
+}
+
+ul li {
+    float: left; /* alinhando a esquerda */
+    background: url(../imagens/aba-direita.png) no-repeat top right ; /* aplicando a imagem de fundo */
+}
+
+li a {
+    display: block; /* tipo elemento bloco*/
+    padding: 0 2em; /*espaçamento interno */
+    line-height: 3em; /* altura da linha do texto */
+    text-decoration: none; /* remove o efeito sublinhado */
+    background: url(../imagens/aba-esquerda.png) no-repeat top left; /* aplicando a imagem de fundo */
+    color: #fff; /* cor da fonte */
+}
+
+ul a:hover {
+    color: #894a1f;
+}
+
+ul #atual {
+    background: url(../imagens/aba-direita-atual.png) no-repeat top right ; /* aplicando a imagem de fundo */
+}  
+
+ul #atual a {
+    background: url(../imagens/aba-esquerda-atual.png) no-repeat top left; /* aplicando a imagem de fundo */
+}

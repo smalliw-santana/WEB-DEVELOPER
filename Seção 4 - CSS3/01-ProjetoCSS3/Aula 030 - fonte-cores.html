@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fontes e cores</title>
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+
+/* FORMATANDO CORES E ESTILOS DE FONTES 
+
+/*Estilo de fonte
+	A propriedade (font-style) é usada principalmente para especificar texto em itálico.
+
+	Esta propriedade possui três valores:
+
+	normal - o texto é mostrado normalmente
+	itálico - o texto é mostrado em itálico
+	oblique - O texto está "inclinado" (oblíquo é muito semelhante ao itálico, mas menos suportado)
+
+/*A propriedade (font-weight) especifica o peso de uma fonte:
+	Exemplo
+	  font-weight: normal;
+	  font-weight: bold;
+
+/*Tamanho da fonte responsivo
+	O tamanho do texto pode ser definido com uma (vw) unidade, o que significa "largura da janela de exibição".
+	Dessa forma, o tamanho do texto seguirá o tamanho da janela do navegador:	  
+	Exemplo
+	style="font-size:10vw;
+*/	
+			.formatacao1 {
+				color: #0EB426;  /* cor da fonte */
+				font-size: 30px; /* tamanho da fonte */ 
+				font-family: Verdana, Geneva, sans-serif;  /* define uma familia de fontes */				
+			}
+
+			.formatacao2 {
+				color: red;
+				font-size: 40px;
+				font-family: "Trebuchet MS";
+			}
+
+			.formatacao3 {
+				color: purple;
+				font-size: 16px;
+				font-family: arial;
+				background: lightgray;        /* cor do plano de fundo */
+				border-left: 5px solid red;  /* borda aplicada a LARGURA, MODELO e COR - da   */ 
+				font-weight: bold;            /* espessura da fonte */
+				font-style: oblique;
+			}
+
+			.for3 {
+				color: #0431B4;
+				font-family: "Trebuchet MS";
+				border-bottom: 5px solid red;
+				text-align: center; /* centraliza o texto */
+				font-size: 2.7vw;   /* fonte responsivo se adapta ao tamanho da tela */
+			} 
+		</style>
+
+	</head>
+	
+	<body>
+		<h1 class="formatacao1">Cabeçalho 1</h1>
+		<p>Conteúdo</p><hr><br>
+
+		<h2 class="formatacao2">Aplicando Conhecimentos</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula sed diam vel lacinia. Proin quis magna eget libero tempor blandit non eu sem. Nullam malesuada orci vitae arcu tempor facilisis. Sed ut placerat neque, ut posuere eros. Sed fringilla, neque eget ornare efficitur, ex turpis viverra orci, eget tempor erat tortor nec felis. In lacus tellus, efficitur nec vestibulum eu, tincidunt at nisi. Praesent non facilisis enim. Quisque vel tristique justo, id bibendum elit. Suspendisse nec orci ut libero ornare accumsan. Praesent pharetra efficitur mauris sit amet sagittis. Fusce id lacus tristique, congue lacus id, scelerisque lectus. Aenean eget dui pretium, mattis massa eu, mattis est. In non dui vel urna placerat porttitor id et neque. Quisque ac lobortis nisi. In interdum est vitae facilisis consectetur. Maecenas tellus tortor, volutpat id lacinia et, accumsan sed nisi.
+		</p><hr><br>
+
+		<h2 class="for3">APLICANDO CONHECIMENTOS</h2>
+		<p class="formatacao3">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula sed diam vel lacinia. Proin quis magna eget libero tempor blandit non eu sem. Nullam malesuada orci vitae arcu tempor facilisis. Sed ut placerat neque, ut posuere eros. Sed fringilla, neque eget ornare efficitur, ex turpis viverra orci, eget tempor erat tortor nec felis. In lacus tellus, efficitur nec vestibulum eu, tincidunt at nisi. Praesent non facilisis enim. Quisque vel tristique justo, id bibendum elit. Suspendisse nec orci ut libero ornare accumsan. Praesent pharetra efficitur mauris sit amet sagittis. Fusce id lacus tristique, congue lacus id, scelerisque lectus. Aenean eget dui pretium, mattis massa eu, mattis est. In non dui vel urna placerat porttitor id et neque. Quisque ac lobortis nisi. In interdum est vitae facilisis consectetur. Maecenas tellus tortor, volutpat id lacinia et, accumsan sed nisi.
+		</p>
+
+	</body>
+</html>

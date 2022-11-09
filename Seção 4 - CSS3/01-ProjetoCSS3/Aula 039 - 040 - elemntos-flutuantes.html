@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Elementos flutuantes</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+
+			#principal {
+				border: 5px solid red; /* borda */
+				background: green; /* cor de fundo */
+			}
+			
+			.conteudo {
+				background: blue;  /* cor de fundo */
+				     color: white; /* cor da fonte */
+				    border: 1px solid gray; /* borda */
+				     width: 200px; /* largura */  
+				    height: 200px; /* altura */
+				    margin: 10px;  /* espaçamento esterno */
+				     float: right;  /* alinha a esquerda */
+			}
+
+			.conteudo2 { /* UTILIZANDO (float) */
+				background: blue;   /* cor de fundo */
+				     color: white; /* cor da fonte */
+				    border: 1px solid gray; /* borda */
+				     width: 200px; /* largura */  
+				    height: 200px; /* altura */
+				    margin: 10px;  /* espaçamento esterno */
+
+				/* FLOAT - right(DIREITA) , lefth(ESQUERDA), none(NENHUM). */
+				     float: left; 
+			} 
+
+			.conteudo-zero { /* UTILIZANDO (float).*/
+				background: red;   /* cor de fundo */
+				     color: white; /* cor da fonte */
+				    border: 1px solid gray; /* borda */
+				     width: 200px; /* largura */  
+				    height: 200px; /* altura */
+				    margin: 10px;  /* espaçamento esterno */
+			}
+
+/* UTILIZADO PARA LIMPAR */
+			.clear {
+				clear: both; /* left(DIREITA), right(ESQUERDA), both(AMBOS), none(NENHUM) */ 
+			}
+
+		</style>
+	</head>
+	
+	<body>
+
+		<div id="principal">
+
+			<div class="conteudo">
+				Conteudo 1
+			</div>
+			
+			<div class="conteudo">
+				Conteudo 2
+			</div>
+			
+			<div class="conteudo">
+				Conteudo 3
+			</div>
+
+			<p class="clear">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim ut turpis in rhoncus. Ut dolor urna, ultrices tristique sem sed, tempor pretium augue. Pellentesque tortor lacus, molestie sit amet lectus vel, tristique aliquam risus. Fusce erat orci, maximus eu erat ut, ultrices vulputate nisl. Praesent vel maximus mauris, nec suscipit neque. Sed ultrices laoreet sollicitudin. Pellentesque ultricies vulputate nibh id volutpat. Nullam convallis, urna bibendum congue commodo, sapien nibh luctus ipsum, consequat dictum nulla purus in augue. Sed imperdiet felis at lobortis lobortis. Sed pellentesque placerat erat ac condimentum. Sed sed nisl nulla. Etiam commodo sit amet elit nec ultricies.
+			</p>
+<!-- 
+			<div class="clear"></div> UTILIZADO PARA LIMPAR O FLUXO,QUANDO SE UTILIZA O (FLOAT) 
+			OBS.: SEMPRE QUANDO UTILIZAR ELEMENTOS FLUTUANTES UTILIZE O 
+			(CLEAR) PARA LIMPAR A FORMATAÇÃO.
+-->
+			
+
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,26 @@
+/* arrendondamento com imgens */
+
+.caixa {
+  width: 400px; /* Largura */
+  background: #dedede url(../imagens/fundo-arredondamento.png) repeat-y;
+}
+
+.caixa h2 {
+  color: brown;
+  font-family: "Car Lock";
+  padding: 10px 20px 0 20px;
+  background: url(../imagens/topo2.png) no-repeat left top;
+}
+
+.caixa p {
+  padding: 0 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 0.8em;
+  margin-bottom: 0;
+}
+
+.caixa .ultimo {
+  background: url(../imagens/baixo2.png) no-repeat left bottom;
+  width: 400px;
+  height: 24px;
+}

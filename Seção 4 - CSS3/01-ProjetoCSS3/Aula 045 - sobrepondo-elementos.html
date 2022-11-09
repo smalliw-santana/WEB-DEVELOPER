@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sobrepondo elementos</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+				
+				body {
+					font-size: 1.2em;
+					font-family: roboto;
+				}
+
+				.conteudo1 {
+					border: 1px solid red;
+					background: orange;
+					width: 300px;
+					height: auto;
+					position: absolute;
+/* Z-INDEX - DEFINE QUAL ELEMENTO APARECE PRIMEIRO 
+   também chamado contexto de empilhamento.
+   pois vc pode ir empilhando os seus conteudos e escolher o que aparecerar primeiro.
+quanto maior o numero mair ele aparecera na frente do documento */
+					z-index: 2;
+				}
+
+				.conteudo2 {
+					border: 1px solid red;
+					background: green;
+					width: 300px;
+					height: auto;
+					position: absolute;
+					top: 80px;
+					left: 250px;
+					z-index: 5;
+				}
+
+				.conteudo3 {
+					border: 1px solid red;
+					background: yellow;
+					width: 300px;
+					height: auto;
+					position: absolute;
+					top: 160px;
+					left: 500px;
+					z-index: 0;
+				}
+
+		</style>
+	</head>
+	<body>
+		<div class="conteudo1"> 
+			<img src="imagens/imagemAULA41-1.png" width="300">
+				Foto 1
+		</div>
+
+		<div class="conteudo2"> 
+			<img src="imagens/imagemAULA41-2.png" width="300">
+				Foto 2
+		</div>
+
+		<div class="conteudo3"> 
+			<img src="imagens/imagemAULA41-3.png" width="300">
+				Foto 3
+		</div>
+
+	</body>
+</html>

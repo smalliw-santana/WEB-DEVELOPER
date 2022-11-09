@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cor e imagem de fundo</title>
+		<meta charset="utf-8">		
+		<style type="text/css"> 
+
+/* APLICANDO COR DE FUNDO 
+			.fundo {	
+				background-color: blue;	 cor do fundo 
+				color: white;  cor do texto 
+			} */
+
+/* APLICANDO IMAGEM DE FUNDO */
+			/*h1*/ {
+				background-image: url('imagens/yoshi.png');
+
+/* BACKGROUND-REPEAT:  
+					NO-REPEAT - não será repetido a imagem 
+					   REPEAT - valor padrão,repete tanto na horizontal como na vertical
+					 REPEAT-X - repete apenas na horizontal 
+					 REPEAT-y - repete apenas vertical */
+				background-repeat: no-repeat;
+
+/* BACKGROUND ATTACHMENT
+						 FIXED - a imagem ficara fixa como plano de fundo
+						SCROLL - a imagem acompanha a página */
+				background-attachment: scroll; 
+
+/* BACKGROUND POSITION - pode ser ultilizado 1 ou 2 valores.
+******	PRIMEIRO VALOR: 
+						CENTER - centralizar
+						  LEFT - a esquerda
+						 RIGHT - a direita	
+******	SEGUNDO VALOR: 	
+						CENTER - centralizar					   
+						   TOP - topo
+						BOTTOM - a baixo 
+*/				background-position: left center; 				
+			}
+
+/* ULTILIZANDO AS MESMAS PROPRIEDADES A CIMA
+				BACKGROUND:
+			          	1- background-color: BLUE: cor de fundo
+						2- background-image: URL: imagem de fundo
+	        			3- background-repeat: REPEAT-X: repetir na horizontal
+				        4- background-attachment: SCROLL: acompanha o conteudo  
+				        5- background-position: CENTER: centralizar */					
+			.fundo {
+				background: blue url('imagens/yoshi.png') repeat-x scroll top;
+				font-family: "Trebuchet MS"; /* tipo de fonte */
+				color: white; /* cor da fonte */				
+			}
+
+		</style>
+
+	<body class="fundo"> <!-- CLASS "fundo", sendo aplicada diretamente no body -->
+		<h1>
+			Conteúdo de Titulo 1<br>
+		</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum tempor sapien, in finibus felis ornare eget. Suspendisse ultrices ut metus a vestibulum. Morbi ac suscipit lacus. Mauris molestie diam feugiat, tempus est id, ultricies odio. Vivamus eleifend dolor auctor sapien molestie rhoncus. Integer dictum lectus in facilisis faucibus. Nam fringilla pellentesque nisl ac venenatis. Aliquam at lacinia elit.
+		</p>
+		<br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum tempor sapien, in finibus felis ornare eget. Suspendisse ultrices ut metus a vestibulum. Morbi ac suscipit lacus. Mauris molestie diam feugiat, tempus est id, ultricies odio. Vivamus eleifend dolor auctor sapien molestie rhoncus. Integer dictum lectus in facilisis faucibus. Nam fringilla pellentesque nisl ac venenatis. Aliquam at lacinia elit.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum tempor sapien, in finibus felis ornare eget. Suspendisse ultrices ut metus a vestibulum. Morbi ac suscipit lacus. Mauris molestie diam feugiat, tempus est id, ultricies odio. Vivamus eleifend dolor auctor sapien molestie rhoncus. Integer dictum lectus in facilisis faucibus. Nam fringilla pellentesque nisl ac venenatis. Aliquam at lacinia elit.
+		</p>
+	
+	</body>
+</html>

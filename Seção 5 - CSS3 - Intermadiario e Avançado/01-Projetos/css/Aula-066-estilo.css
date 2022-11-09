@@ -1,0 +1,77 @@
+/*************************
+/* Zerando a formatação */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "trebuchet ms", Arial, Helvetica, sans-serif; /* tipo de fonte */
+  background: #fff url(../imagens/NoticiasCidade/fundo.png) repeat-x; /* repetindo a imagem apenas na horizontal */
+}
+
+#container {
+  width: 750px; /* largura */
+  margin: 0 auto; /* espaçamento externo */
+}
+
+#topo {
+  background: url(../imagens/NoticiasCidade/detalhe-topo.png) no-repeat top right;
+  padding-top: 25px; /* espaçamento interno */
+  height: 150px; /* altura */
+}
+
+.logo {
+  width: 152px; /* largura */ /* OBS.: LARGURA REFERENTE AO TAMANHO REAL DO LOGO */
+  height: 66px; /* altura */
+  background: url(../imagens/NoticiasCidade/logo.png) no-repeat center; /* para não repetir a imagem e centraliza-la */
+  text-indent: -3000px; /* empurra o texto para o lado direito ou esquerdo - foi ultilizado  para esconder o texto */
+}
+
+/* BARRA DE NAVEGAÇÃO */
+ul {
+  margin: 0; /* espaçamento externo */
+  padding: 0; /*espaçamento interno */
+  list-style: none; /* removendo a marcação de lista */
+}
+
+#topo ul {
+  margin-top: 30px;
+  background: #b10333;
+  float: left; /* flutuando a esquerda - OBS: usado para que fosse exibido o backgraund */
+}
+
+#topo ul li {
+  float: left; /* flutuar a esquerda */
+}
+
+#topo ul a {
+  font-size: 0.9em; /* tamanho da fonte */
+  display: block; /* elemento de bloco */
+  padding: 0.5em 1.5em; /* espaçamento interno */
+  line-height: 2.1em; /* altura da linha */
+  text-decoration: none; /* removendo o sublinhado */
+  color: #fff; /* cor da fonte */
+  background: url(../imagens/NoticiasCidade/divisor.png) no-repeat left center; /* adicionando o divisor no menu */
+}
+
+#topo ul .primeiro a { /* Foi ultilizado a class primeiro para remover o divisor */
+  background: none; /* remove o divisor */
+}
+
+#topo ul a:hover {
+  color: #69001d; /* cor da fonte */
+}
+
+/* MARCAÇÃO DE PAGINA */
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.foto #navegacao a#foto {
+  color: #fff; /* cor da fonte */
+  background: #de003e; /* cor de fundo */
+  cursor: text; /* tipo de curso */
+}

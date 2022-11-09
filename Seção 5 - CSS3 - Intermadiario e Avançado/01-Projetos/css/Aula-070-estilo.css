@@ -1,0 +1,215 @@
+/*************************
+/* Zerando a formatação */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "trebuchet ms", Arial, Helvetica, sans-serif; /* tipo de fonte */
+  background: #fff url(../imagens/NoticiasCidade/fundo.png) repeat-x; /* repetindo a imagem apenas na horizontal */
+}
+
+#container {
+  width: 750px; /* largura */
+  margin: 0 auto; /* espaçamento externo */
+}
+
+#topo {
+  background: url(../imagens/NoticiasCidade/detalhe-topo.png) no-repeat top right;
+  padding-top: 25px; /* espaçamento interno */
+  height: 150px; /* altura */
+}
+
+.logo {
+  width: 152px; /* largura */ /* OBS.: LARGURA REFERENTE AO TAMANHO REAL DO LOGO */
+  height: 66px; /* altura */
+  background: url(../imagens/NoticiasCidade/logo.png) no-repeat center; /* para não repetir a imagem e centraliza-la */
+  text-indent: -3000px; /* empurra o texto para o lado direito ou esquerdo - foi ultilizado  para esconder o texto */
+}
+
+/* BARRA DE NAVEGAÇÃO */
+ul {
+  margin: 0; /* espaçamento externo */
+  padding: 0; /*espaçamento interno */
+  list-style: none; /* removendo a marcação de lista */
+}
+
+#topo ul {
+/*  background: linear-gradient(to bottom, #b10333, #770223); (Efeito gradiente no menu) */
+  margin-top: 30px;
+  background: #b10333;
+  float: left; /* flutuando a esquerda - OBS: usado para que fosse exibido o backgraund */
+}
+
+#topo ul li {
+  float: left; /* flutuar a esquerda */
+}
+
+#topo ul a {
+  font-size: 0.9em; /* tamanho da fonte */
+  display: block; /* elemento de bloco */
+  padding: 0.5em 1.5em; /* espaçamento interno */
+  line-height: 2.1em; /* altura da linha */
+  text-decoration: none; /* removendo o sublinhado */
+  color: #fff; /* cor da fonte */
+  background: url(../imagens/NoticiasCidade/divisor.png) no-repeat left center; /* adicionando o divisor no menu */
+}
+
+#topo ul .primeiro a { /* Foi ultilizado a class primeiro para remover o divisor */
+  background: none; /* remove o divisor */
+}
+
+#topo ul a:hover {
+  color: #69001d; /* cor da fonte */
+}
+
+/* MARCAÇÃO DE PAGINA */
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.foto #navegacao a#foto {
+  color: #fff; /* cor da fonte */
+  background: #de003e; /* cor de fundo */
+  cursor: text; /* tipo de curso */
+}
+
+/*
+  CONFIGURA LAYOUT DE TRÊS COLUNAS
+*/
+#conteudo {
+  margin-top: 60px; /* espaçamento externo */
+  background: #f5f5f5; /* cor de fundo */
+}
+
+#lateral {
+     width: 180px; /* largura */
+     float: left; /* alinhamento a esquerda */
+     margin: 0 0 20px -750px;
+}
+
+#primario {
+     width: 270; /* largura */
+     float: left; /* alinhamento a esquerda */
+     margin: 0 0 20px 195px; /* espaçamento externo */
+}
+
+#tres-colunas #primario {
+     width: 270px; /* largura */
+     float: left; /* alinhamento a esquerda */
+     margin: 0 0 20px 195px; /* espaçamento externo */
+}
+
+#duas-colunas #primario {
+     width: 555px; /* largura */
+}
+
+#uma-coluna #primario {
+     width: 750px; /* largura */
+     margin: 0 0 20px 0px; /* espaçamento externo */
+}
+
+#secundario {
+  width: 270px; /* largura */
+  float: left; /* alinhamento a esquerda */
+  margin: 0 0 20px 15px; /* espaçamento externo */
+}
+
+#container-rodape {
+  background: #294c71; /* cor de fundo */
+  padding: 20px; /* espaçamento interno */
+}
+
+/* Caixa */
+.caixa {
+  margin: 10px 0;/* espaçamento externo */
+  padding: 5px;/* espaçamento interno */
+  background: #f3f3f3 url(../imagens/NoticiasCidade/fundo-caixa.png);
+}
+
+h2 {
+  font-size: 1em;
+  background: #294c71;
+  color: #fff;
+  padding: 5px;
+}
+
+.caixa-conteudo {
+  background: #fff;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+/* FORMATAR MENUS LATERAIS */
+#lateral ul a {
+     font-size: 0.9em;
+     padding: 3px;
+     display: block;
+     line-height: 30px; /* altura da linha */
+     color: #000;
+     text-decoration: none;
+     border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+     background: #f9f9f9 url(../imagens/NoticiasCidade/marcador.png) no-repeat left center;
+     padding-left: 20px; /* espaçamento interno a esquerda */
+     color: #a1a1a1;
+}
+
+/*
+   FORMATANDO FORMULARIOS
+*/
+label {
+     display: block;
+     cursor: pointer;
+}
+
+input {
+     padding: 5px;
+     width: 125px;
+     font-size: 0.9em;
+     background: #fff;
+}
+
+input.submit { /* BOTÃO DE ENVIAR */
+     width: 80px;
+     color: #fff;
+     background-color: #b10333;
+     border: 2px solid #870529;
+     margin-top: 3px;
+}
+
+/* FORMATANDO IMAGENS */
+img.imagem-principal {
+     width: 98%;
+     border: 3px solid #dfdfdf;
+}
+
+/* FORMATANDO OS CABECALHOS */
+h3 {
+     text-transform: uppercase;
+     display: inline;
+     font-size: 0.8em;
+     padding: 3px;
+}
+
+.destaque h3 { /* H3 dentro da class destaque */
+     background: #b10333;
+     color: #fff;
+}
+
+.entrevista h3 { /* H3 dentro da class destaque */
+  background: #de003e;
+}
+
+
+/* rodape */
+#rodape {
+  width: 750px; /* largura */
+  margin: 0 auto; /* espaçamento externo */
+  color: #fff; /* cor da fonte  */
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Elementos flutuantes na pratica</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+
+			body {
+				background: #f4f4f4;
+			}
+			
+			#princiapl {
+				 width: 920px;         /* largura */
+/*				border: 1px solid red; /* borda */
+			}
+
+			.noticia {
+				background: #e5e5e5; /* cor de fundo */
+				   padding: 5px;     /* espaçamento interno */
+				     width: 280px;   /* largura */
+				    margin: 7px;     /* espaçamento externo */
+				     float: left;    /* alinhamento flutuante a esquerda */
+			}
+
+			.imagem-galeria {
+					background: white;
+					     width: 265px;
+					   padding: 5px;
+					     float: left;
+					    margin: 15px;
+			}
+
+			.clear {
+				clear: both; /* limpando a formataçao do float */
+			}
+
+
+		</style>
+	</head>
+	
+	<body>
+		<div id="principal"><!-- INICIO PRINCIPAL -->
+
+			<div>
+			
+			<div class="noticia">
+				<h2>Lorem ipsum dolor sit amet 1</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies vestibulum justo, id ullamcorper orci rhoncus feugiat. In hac habitasse platea dictumst.
+				</p>
+				<a href="">Veja mais</a>
+			</div>
+
+			<div class="noticia">
+				<h2>Lorem ipsum dolor sit amet 2</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies vestibulum justo, id ullamcorper orci rhoncus feugiat. In hac habitasse platea dictumst.
+				</p>
+				<a href="">Veja mais</a>
+			</div>
+
+			<div class="noticia">
+				<h2>Lorem ipsum dolor sit amet 3</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies vestibulum justo, id ullamcorper orci rhoncus feugiat. In hac habitasse platea dictumst.
+				</p>
+				<a href="">Veja mais</a>
+			</div>
+
+		</div><!-- FINAL NOTICIAS -->
+			<div class="clear"></div>
+
+			<div>
+				<div class="imagem-galeria">
+					<img src="imagens/imagemAULA41-1.png">
+						<p>Resumo</p>
+				</div>
+
+				<div class="imagem-galeria">
+					<img src="imagens/imagemAULA41-2.png">
+						<p>Resumo</p>
+				</div>
+
+				<div class="imagem-galeria">
+					<img src="imagens/imagemAULA41-3.png">
+						<p>Resumo</p>
+				</div>
+
+				<div class="imagem-galeria">
+					<img src="imagens/imagemAULA41-4.png">
+						<p>Resumo</p>
+				</div>
+
+				<div class="imagem-galeria">
+					<img src="imagens/imagemAULA41-5.png">
+						<p>Resumo</p>
+				</div>
+			
+			</div>
+
+	</div> <!-- FIM PRINCIPAL -->
+	
+	</body>
+</html>

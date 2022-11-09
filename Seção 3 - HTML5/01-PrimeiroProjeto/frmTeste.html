@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cadastro</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			body {	
+				padding: 5px 15px;			
+				margin-left: 16px;
+				font-size: 16px;
+				background-color: #fff;
+				font-family: "Segoe UI Semibold";				
+				color: red;
+				text-transform: uppercase;
+			}
+
+			h1 {
+			    font-family: "Car Lock";
+				font-size: 37px;
+			/*	text-transform: uppercase; /* fonte em caixa alta */
+				text-align: center;
+				text-decoration: overline;
+			}
+
+			h2 {
+				font-family: "Car Lock";
+/*				text-align: center;  centraliza a fonte */
+				font-size: 25px;
+				color: #5F04B4;
+			}		
+
+			p {
+				font-family: "Car Lock";
+/*				text-align: center;  centraliza a fonte */
+				font-size: 17px;
+				color: red;	
+				margin-bottom: 2px;			
+			}
+
+			form {
+				color: black;
+				font-size: 14px;				
+			}
+
+			input {				
+/*				font-weight: bold;  fonte em negrito */
+				/* width: 250px; */
+				color: #424242;
+				border: 1px solid #5F04B4;
+				border-radius: 2px;
+/*				margin-bottom: 5px;				*/
+			}
+
+			.btn-pesquisar {
+				border: none;
+/*				font-size: 11px; */
+				width: 100px;
+				height: 35px; 
+/*				margin-left: 70px; */
+/*				margin-top: 16px;  */
+				color: white;  
+				background-color: #5F04B4;
+
+				font-family: "Trebuchet MS";
+/*				text-align: center;  centraliza a fonte */
+				font-size: 14px;
+/*				color: #424242;	 */
+/*				margin-bottom: -1px;   */
+			}	
+
+			.btn-cadastrar {
+				border: none;
+/*				font-size: 11px; */
+				width: 180px;
+				height: 40px; 
+/*				margin-left: 70px; */
+				margin-top: 16px;
+				color: white;  
+				background-color: #5F04B4;
+
+				font-family: "Trebuchet MS";
+/*				text-align: center;  centraliza a fonte */
+				font-size: 14px;
+/*				color: #424242;	 */
+				margin-bottom: -1px;
+			}
+
+			.btn-pesquisar:hover,
+			.btn-cadastrar:hover {
+				background: red;
+			}		
+
+			div, img {
+				text-align: center;
+			}			
+
+			.caixa {
+				font-family: "Bahnschrift regular";
+/*				text-align: center;  centraliza a fonte */
+				font-size: 17px;
+				width: 400px;
+				height: 30px;
+				text-transform: uppercase;				
+				border-left: 3px solid #5F04B4;
+				border-right: 3px solid #5F04B4;
+			}
+
+			.IDcaixa {
+				border-left: 3px solid #5F04B4;
+				border-right: 3px solid #5F04B4;
+				font-family: "Bahnschrift regular";
+				font-size: 17px;
+				width: 120px;
+				height: 25px;
+				text-transform: uppercase;								
+			}						
+
+			.IDcaixa:hover,
+			.caixa:hover,
+			#email:hover,
+			textarea:hover {
+				border-left: 3px solid red;
+				border-right: 3px solid red;
+			}
+
+			#email {
+				font-family: "Bahnschrift regular";
+/*				text-align: center;  centraliza a fonte */
+				font-size: 18px;
+				width: 400px;
+				height: 30px;
+				border-left: 3px solid #5F04B4;
+				border-right: 3px solid #5F04B4;
+			}
+
+/*			option {
+				font-family: "Bahnschrift SemiBold";
+				text-align: center;  centraliza a fonte 
+				font-size: 18px;
+				width: 350px;
+				height: 30px;
+			} */
+
+			textarea {
+				font-family: "Car Lock";
+				font-size: 14px;
+				width: 450px;
+				height: 100px;
+				border: 1px solid #5F04B4;
+				border-radius: 2px;
+				border-left: 3px solid #5F04B4;	
+			}
+
+			select, option {
+				font-family: "Bahnschrift regular";
+				font-size: 17px;		
+				text-transform: uppercase;
+				width: 250px;
+				height: 35px;
+				color: #424242;
+				border: 1px solid #5F04B4;
+				border-radius: 2px;
+
+			}
+
+			#rodape {
+				color: #424242;
+				text-align: center;
+			}
+
+			hr {
+				border: 1px solid #D8D8D8;
+				/*background-color: red; */
+			}
+
+			div #menu {
+				text-align: center;
+				width: 500px;
+				height: 25px;
+			}
+
+			a {				
+				text-decoration: underline;
+				padding: 25px;
+				font-family: "Car Lock";
+				color: red;
+				font-size: 14px;
+			}
+
+			a:hover {
+/*				padding: 30px;  */
+/*				height: 50px;  */
+				color: white;
+				background: red;
+				text-decoration: none;
+			}
+
+			#placeholder {
+				font-size: 10px;
+			}
+
+		</style>
+
+	</head>
+
+<!-- ********************************************************************************** -->
+	<body>
+		<h1 id="topo"></h1>
+		<div><img class="img" src="imagens/user6.png" width="250"></div>
+		<h1><u>Cadastro de contato</u></h1>				
+	
+		<form class="titulo">
+			<h2>DADOS PESSOAIS</h2><hr>
+			<p>Nº Documento</p>
+			<input class="IDcaixa" type="text" name="ticket"><br>
+
+			<p>NOME COMPLETO</p>
+			<input class="caixa" type="text" name="Nome"><br>
+
+			<p>ENDERECO</p>
+			<input class="caixa" type="text" name="endereco"><br>
+
+			<p>EMAIL</p>
+			<input id="email" type="text" name="email"><br><br><br>
+			
+<!-- ********************************************************* -->
+	
+			<h2>Dados complementares</h2><hr><br>
+
+			<p>Programa de acesso</p>
+			<select>
+				<option>Administrativo</option>
+				<option>Fiscal</option>
+				<option>Contabil</option>
+				<option>Almoxarifado</option>
+				<option>Controle de troca</option>
+			</select>
+			<input class="btn-pesquisar" type="submit" value="PESQUISAR">  
+			<br><br>
+
+			<p>Tipo de usuario</p>
+			<input type="radio" name="usuario" value="adm">Administrador<br>
+			<input type="radio" name="usuario" value="user">Usuário<br><br>
+
+			<p>Prioridade</p>	
+			<input type="checkbox" name="ticket" value="normal">Normal<br>	
+			<input type="checkbox" name="ticket" value="paliativo">Paliativo<br>
+			<input type="checkbox" name="ticket" value="alta">Alta Prioridade<br>
+			<input type="checkbox" name="ticket" value="urgente">Urgente<br><br>
+
+			<p>Comentarios</p>
+			<textarea></textarea><br><br>
+
+<!-- Botões INICIO  -->
+			<input class="btn-cadastrar" type="submit" value="CADASTRAR">
+<!-- Botões FIM  -->
+		</form><br><hr>		
+
+		<h6 id="rodape">Todos os direitos reservados</h6>
+
+	</body>
+</html>

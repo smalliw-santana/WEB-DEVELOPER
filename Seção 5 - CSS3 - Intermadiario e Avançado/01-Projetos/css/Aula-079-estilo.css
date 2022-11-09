@@ -1,0 +1,95 @@
+/* PARALLAX */
+
+/* configuração padrão */
+body, html {
+  margin: 0;
+  font: 16px "Lato", sans-serif; /* defindo o tamanho da fonte e o tipo */
+  color: #777;
+  height: 100%; /* altura */
+}
+
+.conteudo {
+  color: #777;
+  background-color: white;
+  text-align: justify; /* texto justificado */
+  padding: 50px 80px;
+}
+
+.conteudo:hover {
+  background-color: #f6f2f2;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #2a94ff;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 0.8em;
+}
+
+/* EFEITO PARALLAX */
+.caixa1, .caixa2, .caixa3, .caixa4 {
+  position: relative; /* para que fosse usado o ABSULTE para o texto dentro da imagem */
+  height: 100%;
+  opacity: 1; /* define a opacidade */
+  background-repeat: no-repeat; /* para a imagem não se repetir */
+  background-size: cover; /* para cobrir toda a area */
+  background-position: center; /* para centralizar a imagem */
+  background-attachment: fixed; /* para fixar a imagem */
+}
+
+.caixa1 {
+  background-image: url(../imagens/Parallax/imagem1.jpg);
+}
+
+.caixa2 {
+  background-image: url(../imagens/Parallax/imagem2.jpg);
+}
+
+.caixa3 {
+  background-image: url(../imagens/Parallax/imagem3.jpg);
+}
+
+.caixa4 {
+  background-image: url(../imagens/Parallax/imagem4.jpg);
+}
+
+.conteudo-titulo {
+  position: absolute; /* para poder mudar a posição do titulo */
+  left: 0%; /* usado para centralizar a posição do titulo */
+  top: 45%;
+  width: 100%;
+/*  background: red; */
+  text-align: center;
+}
+
+/* ultilizado para centralizar o texto */
+.conteudo-titulo span.titulo {
+  color: #fff;
+  background-color: #111;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 5px; /* espaçamento estre as letras do texto */
+  text-transform: uppercase;
+}
+
+/* teste */
+.caixa1:hover, .caixa2:hover, .caixa3:hover, .caixa4:hover {
+  opacity: 0.8; /* define a opacidade */
+  background-color: red;
+}
+
+#rodape {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.7em;
+}
+
+span.titulo:hover {
+  background-color: #8A0808;
+  color: yellow;
+  cursor: pointer;
+}

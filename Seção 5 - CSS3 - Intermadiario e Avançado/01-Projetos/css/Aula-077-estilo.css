@@ -1,0 +1,188 @@
+/* ESTRUTURA DO SITE */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, "Trebuchet MS", sans-serif;
+  background: #fff url(../imagens/ChaleHotel/bg.png);
+  margin: 15px;
+}
+
+#container {
+  background:  #ede9cc url(../imagens/ChaleHotel/bg-container.png) top center repeat-y;
+  margin: 0 auto; /* centraliza o cantainer */
+  min-width: 740px; /* largura minima */
+  max-width: 1180px; /* largura maxima */
+}
+
+#topo {
+  position: relative; /* muda a posição */
+  background: #dbcd87;
+  height: 15.4em; /* altura proporcional ao tamanho da fonte (letra) */
+  min-height: 250px; /* altura minima */
+}
+
+#area-logo {
+  position: absolute;
+  background: url(../imagens/ChaleHotel/topo-imagem-principal.png) no-repeat;
+  width: 100%;
+  height: 250px;
+  top: 0;
+  left: 0;
+  z-index: 1; /* se utiliza para daer prioridade sobre as outras imagens */
+}
+
+.logo a {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 3;
+  background: url(../imagens/ChaleHotel/logo.png) no-repeat;
+  width: 151px; /* largura da imagem ultilizada */
+  height: 66px; /* altura da imagem ultilizada */
+  text-indent: -3000px; /* espaçamento externo do texto */
+}
+
+#area-menu {
+  position: absolute; /* muda a posição */
+  top: 0; /* posicionamento superior */
+  right: 0; /* posicionamento a direita */
+  background: url(../imagens/ChaleHotel/topo-imagem-lateral.png) no-repeat;
+  width: 450px;
+  height: 250px;
+  z-index: 2; /* se utiliza para daer prioridade sobre as outras imagens */
+}
+
+#conteudo-menu {
+  margin-left: 90px; /* espaçamento externo a esquerda */
+  margin-right: 15px; /* espaçamento externo a direita */
+  padding-top: 15px;
+}
+
+#menu-locais {
+  border-bottom: 1px solid #b5ab56;
+  border-top: 1px solid #b5ab56;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.7em;
+  color: #8b8448;
+}
+
+#menu-locais .locais {
+  float: left;
+  line-height: 2.1em; /* altura da linha */
+}
+
+a {
+  text-decoration: none;
+}
+
+a.reserva {
+  text-transform: uppercase;
+  background: #a29750;
+  color: #fff5b0;
+  padding: 5px 10px;
+  float: right;
+}
+
+/* BARRA DE NAVEGAÇÃO VERTICAL */
+#menu {
+  margin-top: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul#navegacao {
+  float: left;
+}
+
+ul#navegacao a {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding: 5px;
+  color: #6e672c;
+  line-height: 30px; /* altura da linha do texto */
+}
+
+ul#navegacao a:hover {
+  background: #fdf6be;
+}
+
+.depoimento {
+  width: 226px;
+  height: 164px;
+  float: right; /* flutuando a direita */
+}
+
+/* AREA DE CONTEUDOS */
+#area-principal {
+  float: left;
+  width: 50%;
+  background: url(../imagens/ChaleHotel/bg-area-principal.png) top left repeat-x;
+  padding: 15px 0;
+}
+
+#area-lateral {
+  float: right;
+  width: 50%;
+  background: url(../imagens/ChaleHotel/bg-area-lateral.png) top left repeat-x;
+  padding: 20px 0;
+}
+
+.conteudo {
+  margin: 0 auto;
+  width: 90%;
+}
+
+#rodape {
+  clear: both; /* limpando o fluxo flutuante */
+  padding: 16px;
+  background: #fff url(../imagens/ChaleHotel/bg-rodape.png) repeat-x top;/* repetir na horizontal, no topo */
+  color: #7d7640;
+  text-align: center;
+}
+
+/* FORMATAÇÕES DE TEXTOS */
+h2 {
+  color: #7d7640;
+  font-size: 1.1em;
+  padding: 5px 0px;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* FORMATAÇÕES DA AREA LATERAL */
+#beneficios li {
+  padding: 8px; /* espaçamento interno */
+  border-bottom: 1px solid #f3efcb; /* borda */
+  height: 6em; /* altura */
+}
+
+#beneficios li a img {
+  float: left; /* flutuando a imagem a esquerda */
+  margin-right: 8px;
+}
+
+#beneficios li p {
+  font-size: 0.8em;
+  color: #000;
+}
+
+#beneficios li h3 {
+  font-size: 1em;
+  color: #615b2d;
+  padding: 5px 0;
+  background: url(../imagens/ChaleHotel/ornamento.png) no-repeat center right;
+}
+
+#beneficios li:hover {
+  background: #f3f3d6;
+  cursor: pointer;
+}

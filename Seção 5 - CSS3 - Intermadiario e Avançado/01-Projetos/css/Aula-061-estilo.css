@@ -1,0 +1,38 @@
+/* estilizando tabelas */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+}
+
+table {
+    width: 600px; /* largura */
+    border-collapse: separate; /* (collapse) cola a borda uma na outra retirando o espaçamento */
+}
+
+th, td {
+    padding: 7px; /* espaçamento interno */
+}
+
+th {
+    text-transform: uppercase; /* deixa tudo em maiusculo */
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: left; /* alinhando a esquerda */
+    font-size: 90%; /* tamanho da fonte */
+    letter-spacing: 0.1em; /* espaçamento entre as letras */
+}
+
+tr.alternado {
+    background-color: #efefef;
+}
+
+.numero {
+    text-align: right; /* alinhado a direita */
+}
+
+tr.cor:hover {
+    background-color: skyblue; 
+    color: #0733f8;
+}
+
+

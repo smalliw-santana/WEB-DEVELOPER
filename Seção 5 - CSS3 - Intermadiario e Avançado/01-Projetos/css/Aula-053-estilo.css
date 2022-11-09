@@ -1,0 +1,51 @@
+/******************************************
+ Barra de navegação vertical 01 */
+
+/* ul { 	
+ 	list-style-type: none; /* remove o estilo/tipo de lista 
+ 	margin: 0; /* removendo o espaçamento externo 
+ 	padding: 0; /* removendo o espaçamento interno 
+ } 
+
+ li {
+ 	padding: 5px 20px; /* espaçamento interno a esquerda 
+ 	background: url(../imagens/seta.png) no-repeat left center; /* (url)-adicionando uma imagem de fundo, 
+ 													   (no-repeat)-para a imagem não se repetir, 
+ 													   (left) a esquerda,
+ 													   (center)-centralizar, 
+
+ } */
+
+/******************************************
+ Barra de navegação vertical 02 */
+ ul {
+ 	margin: 0; /* espaçamento externo */
+ 	padding: 0; /* espa;camento interno */
+ 	list-style-type: none; /* remove o estilo/tipo de lista */ 	
+ }
+
+ ul a { /* Selecionando os links dentro da (ul) */
+/* 	border: 1px solid red; */
+	font-size: 13px;
+	font-family: "arial";
+ 	width: 199px; /* largura */
+ 	height: 40px; /* altura */
+ 	display: block; /* deixando como elemento de bloco */
+ 	color: #000; /* cor da fonte */
+ 	text-decoration: none; /* remove o sublinhado */
+ 	text-indent: 45px; /* espaçamento ao lado do texto,como o padding */
+ 	line-height: 40px; /* altura da linha do texto */ 
+ 	background: url(../imagens/menu3.png) no-repeat left bottom; /* (url)-adicionando imagem de fundo, 
+ 													   (no-repeat)-para a imagem não se repetir, 
+ 													   (left) a esquerda,
+ 													   (bottom)-inferior, */
+ }
+
+ a:hover {
+ 	width: 199px; /* largura */
+ 	background-position: right bottom; /* movimentando a direita e inferior */ 
+ 	color: #fff; /* Cor da fonte */ 
+ 	border-radius: 2px;
+ 	border-left: 2px solid red; /* borda */
+ /*	border-right: 1px solid red; /* borda */
+ 	 }

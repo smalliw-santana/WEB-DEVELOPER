@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formatando links</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			
+			a {
+				padding: 7px 10px; /* 7px (top e bottom), 10px (nas laterais) */
+				text-decoration: none; /* remove o sublinhado underline do link */
+				font-family: hack; /* tipo de fonte */
+				font-size: 1.1em; /* tamanho da fonte */
+			}
+			
+/* 1-LINKS NÃO VISITADOS */			
+			a:link {
+				color: #b9c941; /* cor da fonte */
+			}
+
+/* 2-LINKS VISITADOS */
+			a:visited {
+				color: #b9c941; /* cor da fonte */
+			}
+
+/* 3-LINKS HOVER, QUANDO VC PASSAR O CURSOR SOBRE O LINK */
+			a:hover {
+				color: #fff; /* cor da fonte */
+				background: #FF8000; /* cor de fundo */ 
+				border-radius: 2px; /* borda arredondada */
+			}
+
+/* 4-LINKS ATIVOS, QUANDO VOCE CLICA NO LINK */	
+			a:active {
+				color: #e4f371; /* cor da fonte */
+			}		
+
+
+		</style>
+	</head>
+	
+	<body>	
+		<a href="https://www.google.com.br">Google</a> |
+		<a href="https://www.tecmundo.com.br">Tec-Mundo</a> |
+		<a href="https://www.yhdmlo.com.br">yhdmlo</a> |
+		<a href="https://www.megacurioso.com.br">Mega-Curioso</a> 
+
+	</body>
+</html>

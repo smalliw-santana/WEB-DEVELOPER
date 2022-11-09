@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Posicionamentos (static, relative, absolute e fixed</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			
+			body {
+				background: #007fc7; /* cor de fundo */
+			}
+
+			#container {
+				background: #fff;  /* cor de fundo */
+				     width: 800px; /* largura */
+				    margin: 10px auto; /* 10px em cima e em baixo, e AUTO nas laterais esquerda e direita */			
+				   padding: 10px;
+				   position: relative;				    						
+			}
+
+			h1 {
+
+			}
+
+			p {
+				width: 300px;
+			}
+
+/* POSICIONAMENTO (FIXED) */
+			.fixed {
+				  border: 1px solid red;
+			  background: #f2f2f2;
+			      margin: 0px;
+				position: fixed;
+				  bottom: 0px;  /* fundo */
+				   right: 0px; /* direita */
+			}			
+
+/* POSICIONAMENTO (ABSOLUTE) */
+			.absolute {
+				  border: 1px solid red;
+			  background: #f2f2f2;
+				position: absolute;
+				top: 80px; /* alinhamento a cima */
+				right: 80px; /* alinhamento a direita */
+			}
+
+/* POSICIONAMENTO (RELATIVE) */
+			.relative {
+				  border: 1px solid red;
+
+				/* POSICIONAMENTO DE DESLOCAMENTO DO CONTEUDO APLICADO A CLASSE */
+				position: relative; /* top, right, bottom e left */
+				/*     top: 20px; /* topo */
+				  /*  left: 80px; /* esquerda */
+				  /*right: 20px; /* direita */
+				  bottom: -20px; /* baixo */
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<h1>Posicionamentos</h1>
+			<p>
+				P1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis nisi pretium felis viverra viverra. Aliquam et ultricies purus, nec pulvinar ante. Curabitur eget posuere dui. Curabitur massa arcu, eleifend id consequat quis, pretium at risus. 
+			</p>
+
+			<p class="fixed">
+				P2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis nisi pretium felis viverra viverra. Aliquam et ultricies purus, nec pulvinar ante. Curabitur eget posuere dui. Curabitur massa arcu, eleifend id consequat quis, pretium at risus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis nisi pretium felis viverra viverra. Aliquam et ultricies purus, nec pulvinar ante. Curabitur eget posuere dui. Curabitur massa arcu, eleifend id consequat quis, pretium at risus. 
+			</p>
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis nisi pretium felis viverra viverra. Aliquam et ultricies purus, nec pulvinar ante. Curabitur eget posuere dui. Curabitur massa arcu, eleifend id consequat quis, pretium at risus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis nisi pretium felis viverra viverra. Aliquam et ultricies purus, nec pulvinar ante. Curabitur eget posuere dui. Curabitur massa arcu, eleifend id consequat quis, pretium at risus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis nisi pretium felis viverra viverra. Aliquam et ultricies purus, nec pulvinar ante. Curabitur eget posuere dui. Curabitur massa arcu, eleifend id consequat quis, pretium at risus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis nisi pretium felis viverra viverra. Aliquam et ultricies purus, nec pulvinar ante. Curabitur eget posuere dui. Curabitur massa arcu, eleifend id consequat quis, pretium at risus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis nisi pretium felis viverra viverra. Aliquam et ultricies purus, nec pulvinar ante. Curabitur eget posuere dui. Curabitur massa arcu, eleifend id consequat quis, pretium at risus. 
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis nisi pretium felis viverra viverra. Aliquam et ultricies purus, nec pulvinar ante. Curabitur eget posuere dui. Curabitur massa arcu, eleifend id consequat quis, pretium at risus. 
+			</p>
+		</div>
+
+	</body>
+</html>
